@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+console.log("Loaded API URL:", import.meta.env.VITE_API_URL);
 
 export async function validateJSON(payload: any) {
   const response = await fetch(`${API_URL}/validate-json`, {
@@ -31,3 +31,4 @@ export async function validatePDFs(files: File[]) {
 
   return await response.json();
 }
+
