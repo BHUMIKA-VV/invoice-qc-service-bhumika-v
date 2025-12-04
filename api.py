@@ -72,6 +72,10 @@ class HealthModel(BaseModel):
     status: str
     version: str
 
+class InvoiceExtractionResponse(BaseModel):
+    invoices: List[InvoiceModel]
+    validation: ValidationSummaryModel
+
 
 @app.get("/health", response_model=HealthModel)
 async def health():
@@ -133,7 +137,7 @@ async def validate_json(invoices: List[InvoiceModel]):
     return summary
 
 
-@app.post("/extract-and-validate-pdfs", response_model=ValidationSummaryModel)
+@app.post("/extract-and-validate-pdfs", response_model=InvoiceExtractionResponse)
 async def extract_and_validate_pdfs(files: List[UploadFile] = File(...)):
     """
     Extract and validate invoices from uploaded PDFs.
