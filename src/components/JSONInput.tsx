@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { validateJSON } from "../api";
 
 interface JSONInputProps {
   onSubmit: (data: any) => void;
@@ -9,11 +10,17 @@ export function JSONInput({ onSubmit, isLoading }: JSONInputProps) {
   const [json, setJson] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     try {
       setError("");
       const data = JSON.parse(json);
-      onSubmit(data);
+
+      // ⭐ Call FASTAPI backend here
+      const result = await validateJSON(data);
+
+      // ⭐ Send backend result to parent
+      onSubmit(result);
+
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Invalid JSON format"
