@@ -1,7 +1,7 @@
 const API_URL = import.meta.env.VITE_API_URL;
 console.log("Loaded API URL =", API_URL);
 
-export async function validateJSON(payload: any) {
+export async function validateJSON(payload: unknown) {
   const response = await fetch(`${API_URL}/validate-json`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
