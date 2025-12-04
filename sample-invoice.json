@@ -1,0 +1,119 @@
+[
+  {
+    "invoice_number": "INV-2024-001",
+    "external_reference": "PO-2024-5678",
+    "invoice_date": "2024-01-15",
+    "due_date": "2024-02-15",
+    "seller_name": "TechCorp GmbH",
+    "seller_address": "Hauptstrasse 123, 10115 Berlin, Germany",
+    "seller_tax_id": "DE123456789",
+    "buyer_name": "GlobalTrade AG",
+    "buyer_address": "Bahnhofstrasse 456, 8001 Zurich, Switzerland",
+    "buyer_tax_id": "CHE123456789",
+    "currency": "EUR",
+    "net_total": 5000.00,
+    "tax_amount": 950.00,
+    "gross_total": 5950.00,
+    "tax_rate": 19.0,
+    "line_items": [
+      {
+        "description": "Software License - Annual",
+        "quantity": 5,
+        "unit_price": 800.00,
+        "line_total": 4000.00
+      },
+      {
+        "description": "Implementation Services",
+        "quantity": 1,
+        "unit_price": 1000.00,
+        "line_total": 1000.00
+      }
+    ]
+  },
+  {
+    "invoice_number": "INV-2024-002",
+    "external_reference": null,
+    "invoice_date": "2024-01-20",
+    "due_date": "2024-02-03",
+    "seller_name": "CloudServices Ltd",
+    "seller_address": "Technology Park, Dublin 4, Ireland",
+    "seller_tax_id": "IE9999999",
+    "buyer_name": "FinanceX Corporation",
+    "buyer_address": "Wall Street 100, New York, NY 10005, USA",
+    "buyer_tax_id": null,
+    "currency": "USD",
+    "net_total": 2500.00,
+    "tax_amount": 0.00,
+    "gross_total": 2500.00,
+    "tax_rate": 0.0,
+    "line_items": [
+      {
+        "description": "Cloud Infrastructure - Q1 2024",
+        "quantity": 1,
+        "unit_price": 2500.00,
+        "line_total": 2500.00
+      }
+    ]
+  },
+  {
+    "invoice_number": "INV-2024-003",
+    "external_reference": null,
+    "invoice_date": "2024-01-25",
+    "due_date": "2024-01-15",
+    "seller_name": "RawMaterials Inc",
+    "seller_address": "Industrial Zone 5, Rotterdam, Netherlands",
+    "seller_tax_id": "NL123456789B01",
+    "buyer_name": "ManufacturingCo",
+    "buyer_address": "Factory Street 789, Prague, Czech Republic",
+    "buyer_tax_id": "CZ123456789",
+    "currency": "EUR",
+    "net_total": 15000.00,
+    "tax_amount": 3150.00,
+    "gross_total": 18050.00,
+    "tax_rate": 21.0,
+    "line_items": []
+  },
+  {
+    "invoice_number": "INV-2024-004",
+    "external_reference": null,
+    "invoice_date": "2024-02-01",
+    "due_date": "2024-02-15",
+    "seller_name": "ConsultingPro",
+    "seller_address": "Business Center, London, UK",
+    "seller_tax_id": "GB123456789",
+    "buyer_name": "ConsultingPro",
+    "buyer_address": "Business Center, London, UK",
+    "buyer_tax_id": "GB123456789",
+    "currency": "GBP",
+    "net_total": 5000.00,
+    "tax_amount": 1000.00,
+    "gross_total": 6000.00,
+    "tax_rate": 20.0,
+    "line_items": []
+  },
+  {
+    "invoice_number": "INV-2024-005",
+    "external_reference": null,
+    "invoice_date": "2024-02-05",
+    "due_date": "2024-02-20",
+    "seller_name": "LogisticsPro",
+    "seller_address": "Port Area, Hamburg, Germany",
+    "seller_tax_id": "DE987654321",
+    "buyer_name": "RetailChain",
+    "buyer_address": "Shopping Center, Munich, Germany",
+    "buyer_tax_id": "DE111222333",
+    "currency": "EUR",
+    "net_total": 3200.00,
+    "tax_amount": 600.00,
+    "gross_total": 3900.00,
+    "tax_rate": 19.0,
+    "line_items": [
+      {
+        "description": "Freight Services - February",
+        "quantity": 1,
+        "unit_price": 3200.00,
+        "line_total": 3000.00
+      }
+    ]
+  }
+]
