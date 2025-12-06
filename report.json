@@ -1,0 +1,19 @@
+{
+  "total_invoices": 1,
+  "valid_invoices": 0,
+  "invalid_invoices": 1,
+  "error_counts": {
+    "invalid_date_format: due_date": 1,
+    "business_rule_failed: line_items_sum_mismatch (items sum 5.0, net total 1.0)": 1
+  },
+  "results": [
+    {
+      "invoice_id": "/Bill",
+      "is_valid": false,
+      "errors": [
+        "invalid_date_format: due_date",
+        "business_rule_failed: line_items_sum_mismatch (items sum 5.0, net total 1.0)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "invoice_number": "/Bill",
+    "external_reference": null,
+    "invoice_date": "2025-11-15",
+    "due_date": "2025.11.14",
+    "seller_name": "Services Private Limited Bhumika Vasanth",
+    "seller_address": null,
+    "seller_tax_id": null,
+    "buyer_name": "tal Amount",
+    "buyer_address": null,
+    "buyer_tax_id": null,
+    "currency": "INR",
+    "net_total": 1.0,
+    "tax_amount": null,
+    "gross_total": 0.76,
+    "tax_rate": null,
+    "line_items": [
+      {
+        "description": "Telephone: +91",
+        "quantity": 89.0,
+        "unit_price": 3342030.0,
+        "line_total": 0.0
+      },
+      {
+        "description": "Fax: +91",
+        "quantity": 80.0,
+        "unit_price": 3062568.0,
+        "line_total": 5.0
+      },
+      {
+        "description": "Combo -",
+        "quantity": 3.0,
+        "unit_price": 7.0,
+        "line_total": 0.0
+      }
+    ]
+  }
+]

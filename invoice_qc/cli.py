@@ -5,17 +5,22 @@ from pathlib import Path
 
 from invoice_qc.extractor import extract_invoices
 from invoice_qc.validator import validate_invoices
-from invoice_qc.schema import Invoice
+from invoice_qc.schema import Invoice, LineItem
 
 
 def load_invoices_from_json(json_file: str) -> list:
-    """Load invoices from JSON file."""
+    """Load invoices from JSON file, converting nested LineItem dicts to dataclasses."""
     with open(json_file, "r") as f:
         data = json.load(f)
 
     invoices = []
-    for item in data:
-        invoice = Invoice(**item)
+    for raw_invoice_data in data:
+        if 'line_items' in raw_invoice_data:
+            raw_items = raw_invoice_data['line_items']
+            line_item_objects = [LineItem(**item_dict) for item_dict in raw_items]
+            
+            raw_invoice_data['line_items'] = line_item_objects
+        invoice = Invoice(**raw_invoice_data)
         invoices.append(invoice)
 
     return invoices
