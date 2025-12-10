@@ -530,6 +530,8 @@ def process_invoice_batch(pdf_paths):
 - [ ] Test CLI validate command
 - [ ] Test CLI full-run command
 
+Demo link:https://invoice-qc-service-bhumika-pb1oms9yc-bhumika-vvs-projects.vercel.app/
+
 ## License
 
 MIT License - Feel free to use this project for commercial or personal purposes.
